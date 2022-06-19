@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'register.apps.RegisterConfig',
-    'bootstrap5',
+    'bootstrap5'
 ]
 
 MIDDLEWARE = [
@@ -134,3 +134,6 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+REGISTER_REDIRECT_URL='welcome'
+LOGIN_REDIRECT_URL='welcome'
