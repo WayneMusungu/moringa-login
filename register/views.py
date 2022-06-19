@@ -6,6 +6,10 @@ from django.contrib.auth import authenticate, login, logout
 # Create your views here.
 # def welcome(request):
 #     return HttpResponse('Welcome to the login page')
+def karibu(request):
+    
+    return render(request, 'karibu.html')
+
 
 @login_required
 def welcome(request):
@@ -13,7 +17,9 @@ def welcome(request):
 
 
 
+
+
 @login_required(login_url='login')
 def logout_user(request):
     logout(request)
-    return redirect('welcome')
+    return render(request,'karibu.html')
